@@ -1,0 +1,19 @@
+api_version = "2026-10"
+
+[[extensions]]
+name = "checkout-review"
+handle = "checkout-review"
+type = "ui_extension"
+uid = "e03ce723-e148-9b10-f231-4b2b41dfb7efda65a333"
+
+[[extensions.metafields]]
+namespace = "app_reviews"
+key = "rating_data"
+owner_type = "PRODUCT"
+
+[[extensions.targeting]]
+module = "./src/Checkout.jsx"
+target = "purchase.checkout.block.render"
+
+[extensions.capabilities]
+api_access = true
